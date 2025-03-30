@@ -31,6 +31,7 @@ a{
 }
 .logo:hover{
     font-size: 2.55rem;
+    color: var(--basic-color-accent);
 }
 .nav-bar section a{
     color: var(--basic-color);
@@ -62,7 +63,7 @@ a{
     padding-top: 20vh;
     text-shadow: 3px 3px 10px black;
 }
-.hero button {
+.btn-hero {
     background-color: var(--basic-color);
     color: var(--bg-text-color);
     border: 2px solid var(--basic-color-accent);
@@ -74,7 +75,7 @@ a{
     transition: all 0.3s ease;
 }
 
-.hero button:hover {
+.btn-hero:hover {
     background-color: var(--basic-color-accent);
     color: var(--bg-text-color);
     border-color: var(--accent-color);
@@ -88,9 +89,42 @@ a{
     align-items: center;
     margin: 10rem 5rem;
 }
+.featured-mansions div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
 .featured-mansions div img{
     width: 30rem;
     height: 20rem;
     object-fit: cover;
+    border: 2px solid var(--accent-color);
     border-radius: 1rem;
+}
+.featured-mansions div img:hover{
+    border: 0.5rem var(--basic-color-accent) solid;
+    transform: scale(1.15);
+}
+.featured-mansions div p{
+    max-width: 25rem;
+    font-size: 1.5rem;
+}
+.btn-description{
+    background-color: var(--basic-color);
+    color: var(--bg-text-color);
+    border: 2px solid var(--accent-color);
+    padding: 0.5rem 1.3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-description:hover{
+    background-color: var(--basic-color);
+    color: var(--bg-text-color);
+    border: 2px solid var(--basic-color-accent);
+    transform: scale(1.05);
 }
