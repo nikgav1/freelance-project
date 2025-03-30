@@ -128,3 +128,41 @@ a{
     border: 2px solid var(--basic-color-accent);
     transform: scale(1.05);
 }
+.why-us{
+    background-color: var(--basic-color-accent);
+    padding: 8rem;
+}
+.why-us h1{
+    font-size: 4rem;
+    margin: 3rem 0;
+    color: var(--bg-text-color);
+    text-align: center;
+}
+.why-us-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10rem;
+}
+.why-us-container div img{
+    width: 12rem;
+    filter: invert(93%) sepia(10%) saturate(300%) hue-rotate(10deg) brightness(100%) contrast(90%);
+    transition: filter 0.3s ease;
+}
+
+.why-us-container div img:hover {
+    filter: none;
+}
+.why-us-container div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+.why-us-container div h2 {
+    font-size: 2rem;
+    color: var(--bg-text-color);
+    transition: all 0.3s ease;
+}
+.why-us-container div h2:hover {
+    color: black;
+}
