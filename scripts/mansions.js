@@ -9,17 +9,23 @@ const imageSources = [
     'https://res.cloudinary.com/dx7247r5l/image/upload/v1743621202/mansion2_vytntg.jpg',
     'https://res.cloudinary.com/dx7247r5l/image/upload/v1743621202/mansion5_k4snen.jpg',
 ];
-
+const textPhoto = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, amet possimus. Voluptatem consequatur maiores doloribus sequi!"
 const container = document.querySelector(".mansions");
 
 imageSources.forEach((src) => {
     const transformedSrc = src.replace('/upload/', '/upload/w_800,h_500,q_auto:good/');
 
     const img = document.createElement("img");
+    const divContainer = document.createElement("div")
+    const p = document.createElement("p")
+
+    p.textContent = textPhoto;
     img.dataset.src = transformedSrc;
     img.alt = "Mansion image";
     img.classList.add("lazy"); // Add lazy class for styling
-    container.appendChild(img);
+    
+    divContainer.append(img, p)
+    container.appendChild(divContainer);
 });
 
 // Lazy loading logic
