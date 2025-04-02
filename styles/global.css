@@ -44,6 +44,11 @@ a{
     color: var(--basic-color-accent);
     font-size: 1.7rem;
 }
+.footer{
+    padding: 2rem 0;
+    text-align: center;
+    font-size: 1rem;
+}
 @media (max-width: 767px) {
     .nav-bar {
         flex-direction: column;
@@ -53,5 +58,9 @@ a{
     .nav-bar section a {
         margin: 0.5rem 0;
         font-size: 1.2rem;
+    }
+    .footer {
+        padding: 1rem 0;
+        font-size: 0.8rem;
     }
 }
