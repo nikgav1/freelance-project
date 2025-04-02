@@ -9,6 +9,7 @@
 }
 .hero h1{
     font-size: 3rem;
+    text-align: center;
     transition: all 0.3s ease;
 }
 .hero p{
@@ -27,7 +28,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
 }
 .mansions img{
     width: 100%;
@@ -45,4 +46,20 @@
 .footer {
     background-color: var(--basic-color-accent);
     color: var(--bg-text-color);
+}
+@media (max-width: 767px) {
+    .hero{
+        padding: 4rem 0;
+        align-items: center;
+    }
+    .hero p{
+        margin: 0 0.5rem;
+    }
+    .mansions{
+        padding: 3rem 1.5rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        gap: 2rem;
+    }
 }
