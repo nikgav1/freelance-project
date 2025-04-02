@@ -5,3 +5,6 @@
 ### Full project can be seen using GitHub Pages:
 
 https://nikgav1.github.io/freelance-project/
+
+The site is currently being made in another branch "Creating-pages" 
+Make sure to check it out
