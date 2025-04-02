@@ -127,6 +127,18 @@
     text-align: center;
     font-size: 1rem;
 }
+@media (max-width: 1440px) {
+    .featured-mansions div img {
+        width: 90%; 
+        height: auto; 
+    }
+}
+@media (max-width: 1024px) {
+    .featured-mansions div img {
+        width: 85%; 
+        height: auto; 
+    }
+}
 @media (max-width: 767px) {
     body {
         font-size: 0.9rem;
