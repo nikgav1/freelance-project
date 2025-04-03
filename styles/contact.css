@@ -27,6 +27,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 1.3rem;
     padding: 5rem 0;
     color: var(--basic-color-accent);
@@ -84,4 +85,13 @@ form button:hover {
 }
 footer{
     color: var(--basic-color-accent);
+}
+@media (max-width: 767px){
+    .hero{
+        padding: 4rem 0.5rem;
+    }
+    form{
+        padding: 4rem 0.5rem;
+        align-items: center;
+    }
 }
