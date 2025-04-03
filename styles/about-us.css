@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--bg-text-color);
+    color: var(--basic-color-accent);
+}
+
+main {
+    flex: 1; 
+}
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: var(--basic-color-accent);
+    color: var(--bg-text-color);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.team, .values, .history, .testimonials {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.team h2, .values h2, .history h2, .testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--basic-color);
+}
+.values {
+    background-color: var(--basic-color-accent);
+    color: var(--bg-text-color);
+}
+.values h2{
+    color: var(--bg-text-color);
+}
+.values ul {
+    list-style: none;
+    padding: 0;
+}
+
+.values li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.history p, .testimonials blockquote {
+    font-size: 1.2rem;
+    max-width: 40rem;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.testimonials blockquote {
+    font-style: italic;
+    margin: 2rem auto;
+    border-left: 4px solid var(--basic-color-accent);
+    padding-left: 1rem;
+}
+
+.testimonials cite {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: var(--accent-color);
+}
+
+footer {
+    background-color: var(--basic-color-accent);
+    color: var(--bg-text-color);
+}

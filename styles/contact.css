@@ -85,6 +85,7 @@ form button:hover {
 }
 footer{
     color: var(--basic-color-accent);
+    background-color: var(--bg-text-color);
 }
 @media (max-width: 767px){
     .hero{
