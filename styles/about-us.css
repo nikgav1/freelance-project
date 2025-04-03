@@ -80,3 +80,44 @@ footer {
     background-color: var(--basic-color-accent);
     color: var(--bg-text-color);
 }
+
+@media (max-width: 767px) {
+    .hero {
+        padding: 2rem 1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem; 
+    }
+
+    .hero p {
+        font-size: 1rem; 
+        max-width: 90%;
+    }
+
+    .team, .values, .history, .testimonials {
+        padding: 2rem 1rem;
+    }
+
+    .team h2, .values h2, .history h2, .testimonials h2 {
+        font-size: 1.5rem;
+    }
+
+    .values ul {
+        padding: 0;
+    }
+
+    .values li {
+        font-size: 1rem; 
+    }
+
+    .history p, .testimonials blockquote {
+        font-size: 1rem; 
+        max-width: 90%; 
+    }
+
+    .testimonials blockquote {
+        margin: 1.5rem auto; 
+        padding-left: 0.5rem; 
+    }
+}
