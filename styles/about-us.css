@@ -20,12 +20,19 @@ main {
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    transition: all 0.3s ease;
 }
 
 .hero p {
     font-size: 1.2rem;
     max-width: 40rem;
     margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+.hero h1:hover,
+.hero p:hover{
+    color: black;
 }
 
 .team, .values, .history, .testimonials {
