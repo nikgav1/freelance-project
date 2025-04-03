@@ -10,44 +10,68 @@
     box-sizing: border-box;
     font-family: "Lato", sans-serif;
 }
-body{
+body {
     background-color: var(--bg-text-color);
 }
-a{
+a {
     text-decoration: none;
 }
-.nav-bar{
+.nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 4rem;
     padding: 2rem 0;
 }
-.logo{
+.logo {
     font-size: 2.5rem;
     font-weight: 900;
     color: var(--basic-color);
     transition: all 0.3s ease;
 }
-.logo:hover{
+.logo:hover {
     font-size: 2.55rem;
     color: var(--basic-color-accent);
 }
-.nav-bar section a{
+.nav-bar section a {
     color: var(--basic-color);
     font-size: 1.5rem;
     font-weight: 500;
     margin-left: 2rem;
     transition: all 0.3s ease;
 }
-.nav-bar section a:hover{
+.nav-bar section a:hover {
     color: var(--basic-color-accent);
     font-size: 1.7rem;
 }
-.footer{
+.footer {
     padding: 2rem 0;
     text-align: center;
     font-size: 1rem;
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 2rem;
+        padding: 1.5rem 0;
+    }
+
+    .nav-bar section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav-bar section a {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
 }
 @media (max-width: 767px) {
     .nav-bar {
