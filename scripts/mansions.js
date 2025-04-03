@@ -18,13 +18,17 @@ imageSources.forEach((src) => {
     const img = document.createElement("img");
     const divContainer = document.createElement("div")
     const p = document.createElement("p")
+    const button = document.createElement("button")
+
+    button.classList.add("learnMoreMansionBtn")
+    button.textContent = "Learn about this mansion"
 
     p.textContent = textPhoto;
     img.dataset.src = transformedSrc;
     img.alt = "Mansion image";
     img.classList.add("lazy"); // Add lazy class for styling
     
-    divContainer.append(img, p)
+    divContainer.append(img, p, button)
     container.appendChild(divContainer);
 });
 
