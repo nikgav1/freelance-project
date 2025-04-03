@@ -6,6 +6,7 @@
 
 https://nikgav1.github.io/freelance-project/
 
+### Or by cloning into this repository and setting up your server
 
 # Crisp Grace - Luxury Real Estate Website
 
