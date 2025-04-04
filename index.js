@@ -1,5 +1,4 @@
 const toMansionsButton = document.getElementById("redirectToMansionsPage")
-
 const mansionsDescripionBtns = document.querySelectorAll(".btn-description")
 
 mansionsDescripionBtns.forEach((btn) => {

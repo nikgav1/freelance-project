@@ -3,7 +3,7 @@ function handleSubmit(event) {
     const data = new FormData(event.target);
     const value = Object.fromEntries(data.entries());
 
-    localStorage.setItem("userObject", JSON.stringify(value))
+    localStorage.setItem(`User:${value.name}`, JSON.stringify(value))
 }
   
 const form = document.querySelector('form');
