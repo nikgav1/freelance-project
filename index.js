@@ -1,5 +1,13 @@
 const toMansionsButton = document.getElementById("redirectToMansionsPage")
 
-toMansionsButton.addEventListener("click", (event) => {
+const mansionsDescripionBtns = document.querySelectorAll(".btn-description")
+
+mansionsDescripionBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        window.location.href = "./pages/mansions.html";
+    })
+})
+
+toMansionsButton.addEventListener("click", () => {
     window.location.href = "./pages/mansions.html";
 })
